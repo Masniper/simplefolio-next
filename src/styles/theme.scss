@@ -1,0 +1,100 @@
+:root {
+  --primary-color: #02aab0; /* Default */
+  --secondary-color: #00cdac;
+}
+
+[data-theme="pastel-blue"] {
+  --primary-color: #aec6cf; /* Pastel Blue */
+  --secondary-color: #ffb3ba; /* Pastel Pink */
+}
+
+[data-theme="pastel-green"] {
+  --primary-color: #b2f2bb; /* Pastel Green */
+  --secondary-color: #ffdfba; /* Pastel Peach */
+}
+
+[data-theme="pastel-purple"] {
+  --primary-color: #d4a5f9; /* Pastel Purple */
+  --secondary-color: #a3d8f4; /* Pastel Teal */
+}
+
+[data-theme="pastel-yellow"] {
+  --primary-color: #fef6b4; /* Pastel Yellow */
+  --secondary-color: #fcd5ce; /* Pastel Coral */
+}
+
+[data-theme="pastel-orange"] {
+  --primary-color: #ffd1a9; /* Pastel Orange */
+  --secondary-color: #ffb7c5; /* Pastel Rose */
+}
+
+[data-theme="pastel-pink"] {
+  --primary-color: #ffcbc1; /* Pastel Pink */
+  --secondary-color: #d4a6c8; /* Pastel Lilac */
+}
+
+[data-theme="pastel-mint"] {
+  --primary-color: #b8e2dc; /* Pastel Mint */
+  --secondary-color: #e8d5b7; /* Pastel Cream */
+}
+
+[data-theme="pastel-lavender"] {
+  --primary-color: #e6e6fa; /* Pastel Lavender */
+  --secondary-color: #ffc8dd; /* Pastel Blush */
+}
+
+[data-theme="pastel-red"] {
+  --primary-color: #ffaaa5; /* Pastel Red */
+  --secondary-color: #ffefba; /* Pastel Vanilla */
+}
+
+[data-theme="pastel-aqua"] {
+  --primary-color: #a2d2ff; /* Pastel Aqua */
+  --secondary-color: #cdb4db; /* Pastel Mauve */
+}
+
+[data-theme="pastel-gray"] {
+  --primary-color: #d9d9d9; /* Pastel Gray */
+  --secondary-color: #b4cde6; /* Pastel Sky */
+}
+
+[data-theme="pastel-sunset"] {
+  --primary-color: #ffadad; /* Pastel Sunset */
+  --secondary-color: #ffd6a5; /* Pastel Peach */
+}
+
+/* Additional Trending Palettes */
+[data-theme="vintage-pastel"] {
+  --primary-color: #e3c9c9; /* Vintage Rose */
+  --secondary-color: #a4c5c6; /* Soft Teal */
+}
+
+[data-theme="soft-tropical"] {
+  --primary-color: #f4d1ae; /* Tropical Sand */
+  --secondary-color: #7fc9d9; /* Tropical Blue */
+}
+
+[data-theme="earthy-pastel"] {
+  --primary-color: #c4a484; /* Earthy Beige */
+  --secondary-color: #9daaa1; /* Soft Sage */
+}
+
+[data-theme="modern-neutral"] {
+  --primary-color: #e8eae6; /* Modern Light Gray */
+  --secondary-color: #a8a6a5; /* Soft Warm Gray */
+}
+
+[data-theme="romantic-pastel"] {
+  --primary-color: #f7e7ce; /* Soft Ivory */
+  --secondary-color: #f4a7a7; /* Romantic Pink */
+}
+
+[data-theme="calming-sea"] {
+  --primary-color: #b8d8d8; /* Calming Teal */
+  --secondary-color: #e8d7f1; /* Light Lilac */
+}
+
+[data-theme="peachy-pastel"] {
+  --primary-color: #ffd5c2; /* Peach Cream */
+  --secondary-color: #fae1dd; /* Light Coral */
+}

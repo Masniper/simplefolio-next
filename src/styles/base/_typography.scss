@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@import '../theme';
 
 h1 {
   font-weight: 700;
@@ -44,7 +45,7 @@ a:hover {
   // Responsive text purple style
   @include respond(phone) {
     background-image: none;
-    -webkit-text-fill-color: $secondary-color;
+    -webkit-text-fill-color: var(--secondary-color);
   }
 
   &:hover {

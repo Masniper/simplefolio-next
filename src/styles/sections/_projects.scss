@@ -1,3 +1,4 @@
+@import '../theme';
 #projects {
   background-color: $white-color;
   color: $dark-blue-text;
@@ -45,7 +46,7 @@
       }
 
       & p > a {
-        color: $secondary-color;
+        color: var(--secondary-color);
       }
     }
 

@@ -1,3 +1,4 @@
+@import '../theme';
 .footer {
   background-color: $dark-grey;
   color: $white-color;
@@ -20,7 +21,7 @@
 
       &:hover,
       &:active {
-        color: $primary-color;
+        color: var(--primary-color);
         -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
         box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
       }
