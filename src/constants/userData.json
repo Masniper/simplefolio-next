@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "title": "Sample Portfolio | Developer",
+    "description": "Portfolio for showcasing projects and skills."
+  },
+  "hero": {
+    "name": "Sample Name",
+    "description": "I'm a Passionate Developer."
+  },
+  "about": {
+    "profileImage": "assets/profile.jpg",
+    "description": [
+      "This is where you can describe yourself. Highlight your skills, experience, and what drives you.",
+      "Include additional information about your hobbies, aspirations, or unique qualities."
+    ],
+    "resumeLink": "assets/sample-resume.pdf"
+  },
+  "projects": [
+    {
+      "title": "Sample Project 1",
+      "description": "A detailed description of the project, its purpose, and the technologies used. Keep it concise and engaging.",
+      "liveLink": "https://example.com/project1",
+      "sourceCodeLink": "https://github.com/sampleuser/project1",
+      "image": "assets/project.jpg"
+    },
+    {
+      "title": "Sample Project 2",
+      "description": "Explain the challenges faced during the project and how you solved them. Mention the skills acquired.",
+      "liveLink": "https://example.com/project2",
+      "sourceCodeLink": "https://github.com/sampleuser/project2",
+      "image": "assets/project.jpg"
+    },
+    {
+      "title": "Sample Project 3",
+      "description": "Focus on collaboration or leadership skills, if applicable, and highlight the project's impact.",
+      "liveLink": "https://example.com/project3",
+      "sourceCodeLink": "https://github.com/sampleuser/project3",
+      "image": "assets/project.jpg"
+    }
+  ],
+  "contact": {
+    "callToAction": "Reach out for exciting collaborations or opportunities!",
+    "email": "sampleemail@example.com"
+  },
+  "footer": {
+    "socialLinks": [
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/sampleuser",
+        "iconClass": "fa fa-twitter fa-inverse"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/in/sampleuser",
+        "iconClass": "fa fa-linkedin fa-inverse"
+      },
+      {
+        "platform": "GitHub",
+        "url": "https://github.com/sampleuser",
+        "iconClass": "fa fa-github fa-inverse"
+      }
+    ],
+    "copyrightText": "© 2024 - Template by",
+    "authorName": "Sample Name",
+    "authorLink": "https://github.com/sampleuser/",
+    "githubButtons": [
+      {
+        "url": "https://github.com/sampleuser/sampleproject/fork",
+        "icon": "octicon-repo-forked",
+        "label": "Fork"
+      },
+      {
+        "url": "https://github.com/sampleuser/sampleproject",
+        "icon": "octicon-star",
+        "label": "Star"
+      }
+    ]
+  }
+}
