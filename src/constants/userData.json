@@ -1,10 +1,11 @@
 {
+  "Theme": "pastel-sunset",
   "metadata": {
-    "title": "Sample Portfolio | Developer",
+    "title": "[Your Name] Portfolio | Developer",
     "description": "Portfolio for showcasing projects and skills."
   },
   "hero": {
-    "name": "Sample Name",
+    "name": "Your Name",
     "description": "I'm a Passionate Developer."
   },
   "about": {
@@ -13,7 +14,7 @@
       "This is where you can describe yourself. Highlight your skills, experience, and what drives you.",
       "Include additional information about your hobbies, aspirations, or unique qualities."
     ],
-    "resumeLink": "assets/sample-resume.pdf"
+    "resumeLink": "assets/resume.pdf"
   },
   "projects": [
     {
@@ -58,21 +59,45 @@
         "platform": "GitHub",
         "url": "https://github.com/sampleuser",
         "iconClass": "fa fa-github fa-inverse"
-      }
-    ],
-    "copyrightText": "© 2024 - Template by",
-    "authorName": "Sample Name",
-    "authorLink": "https://github.com/sampleuser/",
-    "githubButtons": [
-      {
-        "url": "https://github.com/sampleuser/sampleproject/fork",
-        "icon": "octicon-repo-forked",
-        "label": "Fork"
       },
       {
-        "url": "https://github.com/sampleuser/sampleproject",
+        "platform": "Facebook",
+        "url": "https://facebook.com/sampleuser",
+        "iconClass": "fa fa-facebook fa-inverse"
+      },
+      {
+        "platform": "Instagram",
+        "url": "https://instagram.com/sampleuser",
+        "iconClass": "fa fa-instagram fa-inverse"
+      },
+      {
+        "platform": "YouTube",
+        "url": "https://youtube.com/sampleuser",
+        "iconClass": "fa fa-youtube fa-inverse"
+      }
+    ],
+    "copyrightText": "© 2024 - Template Modify by",
+    "authorName": "Masniper",
+    "authorLink": "https://github.com/masniper/",
+    "githubButtons": [
+      {
+        "url": "https://github.com/masniper",
+        "label": "Follow Masniper on GitHub"
+      },
+      {
+        "url": "https://github.com/masniper/simplefolio-next",
         "icon": "octicon-star",
         "label": "Star"
+      },
+      {
+        "url": "https://github.com/masniper/simplefolio-next/subscription",
+        "icon": "octicon-eye",
+        "label": "Watch"
+      },
+      {
+        "url": "https://github.com/masniper/simplefolio-next/fork",
+        "icon": "octicon-repo-forked",
+        "label": "Fork"
       }
     ]
   }
