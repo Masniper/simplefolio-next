@@ -1,17 +1,18 @@
-
 # Simplefolio-Next
 
-A modern, customizable, and lightweight portfolio template built with **Next.js** and **TypeScript**. This project is inspired by [Simplefolio](https://github.com/cobiwave/simplefolio) and reimagined with enhanced features, a scalable structure, and dynamic content management.
+A modern, customizable, and lightweight portfolio template built with **Next.js** and **TypeScript**. This project is inspired by [Simplefolio](https://github.com/cobiwave/simplefolio) and reimagined with enhanced features, scalable structure, and dynamic content management.
 
 ## 🚀 Features
 
-- **Next.js Framework:** Built using the latest features of Next.js for server-side rendering and static site generation.
-- **TypeScript Support:** Ensures type safety and better development experience.
-- **Dynamic Content Management:** All portfolio data is stored in a JSON file for easy updates and maintenance.
-- **Responsive Design:** Optimized for all devices, from desktops to mobile screens.
-- **Animations:** Integrated `scrollReveal` and tilt effects for a modern and interactive UI.
-- **SCSS Styling:** Retains the original styling structure with modular SCSS for flexibility.
-- **SEO Friendly:** Metadata dynamically updates for better search engine visibility.
+- **Next.js Framework**: Built using the latest features of Next.js for server-side rendering and static site generation.
+- **TypeScript Support**: Ensures type safety and better development experience.
+- **Dynamic Content Management**: All portfolio data is stored in a JSON file for easy updates and maintenance.
+- **Theme Selection**: Choose from pre-defined themes or add your own using a theme palette.
+- **Responsive Design**: Optimized for all devices, from desktops to mobile screens.
+- **Animations**: Integrated `scrollReveal` and tilt effects for a modern and interactive UI.
+- **SCSS Styling**: Retains the original styling structure with modular SCSS for flexibility.
+- **SEO Friendly**: Metadata dynamically updates for better search engine visibility.
+- **Customizable Footer**: Easily manage social links, GitHub buttons, and copyright details.
 
 ## 📂 Folder Structure
 
@@ -25,6 +26,64 @@ src/
 ├── public/                 # Static assets (e.g., images, PDFs)
 └── pages/                  # Next.js pages
 ```
+
+## 🎨 Selectable Themes
+
+Choose from a variety of pre-defined themes in `src/styles/theme.scss` or add your own:
+
+- **Pastel Blue**
+- **Pastel Green**
+- **Pastel Purple**
+- **Pastel Yellow**
+- **Pastel Orange**
+- **Pastel Pink**
+- **Pastel Mint**
+- **Pastel Lavender**
+- **Pastel Red**
+- **Pastel Aqua**
+- **Pastel Gray**
+- **Pastel Sunset**
+- **Vintage Pastel**
+- **Soft Tropical**
+- **Earthy Pastel**
+- **Modern Neutral**
+- **Romantic Pastel**
+- **Calming Sea**
+- **Peachy Pastel**
+
+To select a theme, update the `Theme` field in your JSON data:
+
+```json
+{
+  "Theme": "pastel-sunset",
+  ...
+}
+```
+
+To add a new theme, extend the `theme.scss` file:
+
+```scss
+[data-theme="your-custom-theme"] {
+  --primary-color: #yourPrimaryColor;
+  --secondary-color: #yourSecondaryColor;
+}
+
+Note: To preview all themes and enable dynamic theme switching, you must uncomment the Header component in app/page.tsx. The Header provides a dropdown menu for theme selection and displays the current theme.
+```
+
+## ✨ Customization
+
+1. **Edit Portfolio Data**:  
+   Update `src/constants/userData.json` to modify portfolio content (e.g., hero section, about section, projects, contact info).
+
+2. **Manage Social Links**:  
+   Add or remove links in the `socialLinks` array under the `footer` section of `userData.json`.
+
+3. **Manage GitHub Buttons**:  
+   Edit the `githubButtons` array under the `footer` section to add, remove, or customize buttons.
+
+4. **Customize Styles**:  
+   Modify SCSS files in `src/styles/` for advanced styling.
 
 ## 🛠️ Installation & Setup
 
@@ -55,20 +114,9 @@ src/
    ```
 5. Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio.
 
-## ✨ Customization
-
-1. **Edit Portfolio Data:**
-   Update `src/constants/userData.json` to modify portfolio content, such as metadata, hero section, about section, projects, contact info, and footer.
-
-2. **Change Styles:**
-   Modify SCSS files in `src/styles/` to customize the look and feel of the portfolio.
-
-3. **Add or Remove Sections:**
-   Edit the `sections` array in `src/app/page.tsx` to add or remove sections dynamically.
-
 ## 🌟 Inspiration
 
-This project was inspired by [Simplefolio](https://github.com/cobiwave/simplefolio), a clean and minimal portfolio template. I built this version with modern tools like Next.js, TypeScript, and SCSS to enhance performance, scalability, and customization.
+This project is inspired by [Simplefolio](https://github.com/cobiwave/simplefolio) and enhanced with modern tools like Next.js, TypeScript, and SCSS for performance, scalability, and customization.
 
 ## 📜 License
 
