@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { initScrollReveal } from "@/libs/scrollReveal";
 import initTiltEffect from "@/libs/tiltAnimation";
 import { targetElements, defaultProps } from "@/constants/scrollRevealConfig";
@@ -10,12 +10,23 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import SectionWrapper from "@/components/SectionWrapper";
 import data from "@/constants/userData.json";
+import Header from '@/components/Header';
 
 const HomePage: React.FC = () => {
+  const [selectedTheme, setSelectedTheme] = useState(data['Theme']);
+
   useEffect(() => {
     initScrollReveal(targetElements, defaultProps);
     initTiltEffect();
   }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", selectedTheme);
+  }, [selectedTheme]);
+
+  const handleThemeChange = (theme: string) => {
+    setSelectedTheme(theme);
+  };
 
   const sections = [
     {
@@ -49,6 +60,13 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
+      {/* Header Component: Uncomment this section to enable theme preview and switching functionality. 
+          - Displays the current selected theme.
+          - Allows users to switch between different themes using the onThemeChange handler. */}
+      <Header
+        selectedTheme={selectedTheme} // The currently selected theme (state variable).
+        onThemeChange={handleThemeChange} // Function to update the selected theme.
+      />
       <div id="top"></div>
       {sections.map(({ id, component, className }) => (
         <SectionWrapper key={id} id={id} className={className || ""}>
