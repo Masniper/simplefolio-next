@@ -95,6 +95,7 @@
     "githubButtons": [
       {
         "url": "https://github.com/masniper",
+        "icon": "",
         "label": "Follow Masniper on GitHub"
       },
       {
