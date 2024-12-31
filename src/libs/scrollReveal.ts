@@ -1,12 +1,12 @@
-import ScrollReveal, { ScrollRevealObject } from "scrollreveal";
+import ScrollReveal, { ScrollRevealObjectOptions } from "scrollreveal";
 
 // Define types for target elements and animations
 interface TargetElement {
   element: string;
-  animation: Partial<ScrollRevealObject>;
+  animation: Partial<ScrollRevealObjectOptions>;
 }
 
-export function initScrollReveal(targetElements: TargetElement[], defaultProps: Partial<ScrollRevealObject>) {
+export function initScrollReveal(targetElements: TargetElement[], defaultProps: Partial<ScrollRevealObjectOptions>) {
   if (!targetElements.length) return;
 
   // Initialize ScrollReveal

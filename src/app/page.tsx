@@ -1,27 +1,40 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { initScrollReveal } from "@/libs/scrollReveal";
-import initTiltEffect from "@/libs/tiltAnimation";
-import { targetElements, defaultProps } from "@/constants/scrollRevealConfig";
+import { defaultProps } from "@/constants/scrollRevealConfig";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import SectionWrapper from "@/components/SectionWrapper";
 import data from "@/constants/userData.json";
-import Header from '@/components/Header';
+import Header from "@/components/Header";
 
 const HomePage: React.FC = () => {
-  const [selectedTheme, setSelectedTheme] = useState(data['Theme']);
+  const [selectedTheme, setSelectedTheme] = useState(data["Theme"]);
 
   useEffect(() => {
-    initScrollReveal(targetElements, defaultProps);
-    initTiltEffect();
+    // Dynamically import utilities and execute on the client
+    (async () => {
+      if (typeof window !== "undefined") {
+        const { initScrollReveal } = await import("@/libs/scrollReveal");
+        const initTiltEffect = (await import("@/libs/tiltAnimation")).default;
+        const { getTargetElements } = await import("@/constants/scrollRevealConfig");
+
+        const targetElements = getTargetElements();
+
+        if (targetElements.length > 0) {
+          initScrollReveal(targetElements, defaultProps);
+          initTiltEffect();
+        }
+      }
+    })();
   }, []);
 
   useEffect(() => {
-    document.documentElement.setAttribute("data-theme", selectedTheme);
+    if (typeof window !== "undefined") {
+      document.documentElement.setAttribute("data-theme", selectedTheme);
+    }
   }, [selectedTheme]);
 
   const handleThemeChange = (theme: string) => {
@@ -60,12 +73,10 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
-      {/* Header Component: Uncomment this section to enable theme preview and switching functionality. 
-          - Displays the current selected theme.
-          - Allows users to switch between different themes using the onThemeChange handler. */}
+      {/* Header Component: Uncomment this section to enable theme preview and switching functionality. */}
       {/* <Header
-        selectedTheme={selectedTheme} // The currently selected theme (state variable).
-        onThemeChange={handleThemeChange} // Function to update the selected theme.
+        selectedTheme={selectedTheme}
+        onThemeChange={handleThemeChange}
       /> */}
       <div id="top"></div>
       {sections.map(({ id, component, className }) => (
