@@ -63,10 +63,10 @@ const HomePage: React.FC = () => {
       {/* Header Component: Uncomment this section to enable theme preview and switching functionality. 
           - Displays the current selected theme.
           - Allows users to switch between different themes using the onThemeChange handler. */}
-      <Header
+      {/* <Header
         selectedTheme={selectedTheme} // The currently selected theme (state variable).
         onThemeChange={handleThemeChange} // Function to update the selected theme.
-      />
+      /> */}
       <div id="top"></div>
       {sections.map(({ id, component, className }) => (
         <SectionWrapper key={id} id={id} className={className || ""}>

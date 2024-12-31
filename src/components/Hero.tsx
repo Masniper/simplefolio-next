@@ -8,7 +8,7 @@ interface HeroProps {
 const Hero: FC<HeroProps> = ({ name, description }) => (
   <div className="container">
     <h1 className="hero-title load-hidden">
-      Hi, my name is <span className="text-color-main">[{name}]</span>
+      Hi, my name is <span className="text-color-main">{name}</span>
       <br />
       {description}
     </h1>

@@ -15,7 +15,7 @@ interface ProjectsProps {
 const Projects: FC<ProjectsProps> = ({ projects }) => (
   <div className="container">
     <div className="project-wrapper">
-      <h2 className="section-title dark-blue-text">Projects</h2>
+      <h2 className="section-title dark-blue-text">Recently Projects</h2>
       {projects.map((project, index) => (
         <div key={index} className="row">
           <div className="col-lg-4 col-sm-12">
@@ -24,27 +24,35 @@ const Projects: FC<ProjectsProps> = ({ projects }) => (
               <div>
                 <p className="mb-4">{project.description}</p>
               </div>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                className="cta-btn cta-btn--hero"
-                href={project.liveLink}
-              >
-                See Live
-              </a>
-              <a
-                rel="noreferrer"
-                target="_blank"
-                className="cta-btn text-color-main"
-                href={project.sourceCodeLink}
-              >
-                Source Code
-              </a>
+              {project.liveLink && (
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  className="cta-btn cta-btn--hero"
+                  href={project.liveLink}
+                >
+                  See Live
+                </a>
+              )}
+              {project.sourceCodeLink && (
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  className="cta-btn text-color-main"
+                  href={project.sourceCodeLink}
+                >
+                  Source Code
+                </a>
+              )}
             </div>
           </div>
           <div className="col-lg-8 col-sm-12">
             <div className="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href={project.liveLink} target="_blank">
+              <a
+                rel="noreferrer"
+                href={project.liveLink ? project.liveLink : `#${project.title}`}
+                target={project.liveLink ? "_blank" : "_self"}
+              >
                 <div
                   data-tilt
                   data-tilt-max="4"
