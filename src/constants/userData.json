@@ -11,8 +11,8 @@
   "about": {
     "profileImage": "assets/profile.jpg",
     "description": [
-      "I am an experienced developer with a passion for creating innovative and impactful applications. I specialize in React, React Native, and Node.js, with a focus on delivering user-friendly and high-performing solutions.",
-      "In addition to development, I enjoy exploring new technologies, solving challenging problems, and mentoring others."
+      "I am a Front-End Developer with a passion for crafting high-performance, scalable, and user-friendly web and mobile applications. With expertise in React, React Native, and Next.js, I specialize in state management, UI/UX enhancement, and performance optimization to deliver seamless digital experiences.",
+      "Beyond development, I thrive on exploring new technologies, solving complex challenges, and mentoring others. I take pride in collaborating with cross-functional teams to drive innovation and intuitive user experiences."
     ],
     "resumeLink": "assets/resume.pdf"
   },
@@ -47,11 +47,11 @@
     },   
     {
       "title": "Charsoq - Maris Application Development",
-      "description": "Enhanced and maintained the Maris application for a data-driven marketing agency. Focused on UI/UX improvements, feature updates, and library compatibility.",
+      "description": "Contributed to the development and maintenance of the Maris application for Charsoq, a data-driven marketing agency specializing in the pharmaceutical industry. Responsibilities included fixing critical bugs, optimizing background geolocation tracking, enhancing UI/UX, upgrading libraries, and implementing requested features using React Native and Next.js.",
       "liveLink": "https://www.charsoq.com/en",
       "sourceCodeLink": "",
       "image": "assets/Maris.png"
-    },
+    },    
     {
       "title": "KTT Company Website",
       "description": "Developed a responsive and modern website for Tolou Taban Company (KTT), established in 2008. The site highlights the company’s expertise in infrastructure projects, industrial kitchen consulting, and human resource solutions. Focused on delivering a user-friendly experience to showcase their diverse services, including construction, waste management, and restaurant operations.",
@@ -60,8 +60,8 @@
       "image": "assets/ktt-company.png"
     },    
     {
-      "title": "Pezeshket - Health Consultation App",
-      "description": "Contributed to the development of a telehealth platform enabling users to access medical consultations and services. Delivered a responsive and user-friendly interface.",
+      "title": "Pezeshket - Telehealth & Medical Consultation Platform",
+      "description": "Played a key role in developing and optimizing Pezeshket, the largest online health consultation platform for Persian speakers. Built the Progressive Web App (PWA) using React for a seamless web experience and developed the mobile application using React Native for cross-platform accessibility. Focused on enhancing UI/UX, improving performance, and ensuring smooth real-time interactions for users and healthcare professionals.",
       "liveLink": "https://web.pezeshket.com/",
       "sourceCodeLink": "",
       "image": "assets/Pezeshket.png"
