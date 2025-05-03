@@ -1,18 +1,18 @@
-import React, { FC } from "react";
+import React, { FC, useState } from "react";
 
 interface HeaderProps {
   selectedTheme: string;
   onThemeChange: (theme: string) => void;
 }
 
-interface themePalette {
+interface ThemePalette {
   Pallet: string;
   pColor: string;
   sColor: string;
   id: string;
 }
 
-const themePalettes: themePalette[] = [
+const themePalettes: ThemePalette[] = [
   {
     Pallet: "Default",
     pColor: "#02aab0",
@@ -136,32 +136,79 @@ const themePalettes: themePalette[] = [
 ];
 
 const Header: FC<HeaderProps> = ({ selectedTheme, onThemeChange }) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const selectedThemeData = themePalettes.find((t) => t.id === selectedTheme);
   return (
-    <header
-      style={{
-        display: "flex",
-        flexWrap: "wrap",
-        justifyContent: "center",
-        width: "100%",
-        padding: "10px",
-      }}
-    >
-      {themePalettes.map((theme) => (
+    <header className="d-flex justify-content-end p-3 w-100">
+      <img
+        alt="theme"
+        className=""
+        height="auto"
+        width="22px"
+        src={'assets/theme.png'}
+      />
+      <div className="dropdown">
         <button
-          key={theme.id}
-          className="btn btn-outline-secondary m-1"
-          onClick={() => onThemeChange(theme.id)}
+          className="btn btn-light dropdown-toggle d-flex align-items-center justify-content-between"
+          type="button"
+          id="themeDropdown"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
           style={{
-            flex: "1 0 auto",
-            maxWidth: "200px",
-            background: `linear-gradient(45deg, ${theme.pColor}, ${theme.sColor})`,
+            background: selectedThemeData
+              ? `linear-gradient(45deg, ${selectedThemeData.pColor}, ${selectedThemeData.sColor})`
+              : "white",
             color: "#000",
-            border: theme.id === selectedTheme ? "2px solid #000" : "none",
+            border: "1px solid #ddd",
+            minWidth: "220px",
+            fontWeight: "500",
+            boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
+          }}
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <span>{selectedThemeData?.Pallet || "Select Theme"}</span>
+          <i className={`bi bi-chevron-${isOpen ? "up" : "down"} ms-2`}></i>
+        </button>
+
+        <ul
+          className={`dropdown-menu ${isOpen ? "show" : ""}`}
+          aria-labelledby="themeDropdown"
+          style={{
+            maxHeight: "60vh",
+            overflowY: "auto",
+            minWidth: "220px",
+            padding: "8px",
+            boxShadow: "0 4px 12px rgba(0,0,0,0.15)",
           }}
         >
-          {theme.Pallet}
-        </button>
-      ))}
+          {themePalettes.map((theme) => (
+            <li key={theme.id}>
+              <button
+                className="dropdown-item d-flex align-items-center py-2 px-3"
+                onClick={() => {
+                  onThemeChange(theme.id);
+                  setIsOpen(false);
+                }}
+                style={{
+                  background: `linear-gradient(45deg, ${theme.pColor}, ${theme.sColor})`,
+                  color: "#000",
+                  margin: "4px 0",
+                  borderRadius: "6px",
+                  border:
+                    selectedTheme === theme.id ? "2px solid #000" : "none",
+                  fontWeight: selectedTheme === theme.id ? "600" : "400",
+                  transition: "all 0.2s ease",
+                }}
+              >
+                {theme.Pallet}
+                {selectedTheme === theme.id && (
+                  <i className="bi bi-check2 ms-2"></i>
+                )}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
     </header>
   );
 };

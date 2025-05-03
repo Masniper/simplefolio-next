@@ -74,10 +74,10 @@ const HomePage: React.FC = () => {
   return (
     <div>
       {/* Header Component: Uncomment this section to enable theme preview and switching functionality. */}
-      {/* <Header
+      <Header
         selectedTheme={selectedTheme}
         onThemeChange={handleThemeChange}
-      /> */}
+      />
       <div id="top"></div>
       {sections.map(({ id, component, className }) => (
         <SectionWrapper key={id} id={id} className={className || ""}>

@@ -18,6 +18,13 @@
   },
   "projects": [
     {
+      "title": "InsideBox - Cross-platform QR Code Manager",
+      "description": "Developed a cross-platform mobile application using Expo and React Native to manage QR codes, photos, and notes. Features include offline support, dark mode, data backup/restore, localization, and label printing.",
+      "liveLink": "",
+      "sourceCodeLink": "",
+      "image": "assets/InsideBox.png"
+    },
+    {
       "title": "Blackjack Game Application",
       "description": "Developed a cross-platform Blackjack game using React Native and Expo. Integrated real-time gameplay with WebSocket and provided a seamless user experience.",
       "liveLink": "",
