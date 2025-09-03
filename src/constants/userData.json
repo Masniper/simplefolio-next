@@ -11,12 +11,26 @@
   "about": {
     "profileImage": "assets/profile.jpg",
     "description": [
-      "I am a Front-End Developer with a passion for crafting high-performance, scalable, and user-friendly web and mobile applications. With expertise in React, React Native, and Next.js, I specialize in state management, UI/UX enhancement, and performance optimization to deliver seamless digital experiences.",
-      "Beyond development, I thrive on exploring new technologies, solving complex challenges, and mentoring others. I take pride in collaborating with cross-functional teams to drive innovation and intuitive user experiences."
+      "Front-End Developer focused on building high-performance, scalable, and user-friendly web and mobile applications. Skilled in React, React Native, and Next.js, with expertise in state management, UI/UX improvement, and performance optimization for seamless digital experiences.",
+      "Passionate about clean code, emerging technologies, and solving complex problems. Enjoy collaborating with cross-functional teams to create innovative, intuitive solutions that drive measurable impact."
     ],
     "resumeLink": "assets/resume.pdf"
   },
   "projects": [
+    {
+      "title": "Fractalwise – AI & Data Analytics Landing Page",
+      "description": "Designed and developed a responsive landing page for Fractalwise, an AI and data analytics company specializing in educational institutions. The page highlights services such as advanced data analytics, interactive dashboards, data governance, and behavioral data analysis. Built with modern web technologies for optimal performance, accessibility, and SEO, ensuring a clean user experience to attract and engage target audiences.",
+      "liveLink": "https://fractalwise.ir/",
+      "sourceCodeLink": "",
+      "image": "assets/fractalwise-landing.png"
+    },
+    {
+      "title": "Stuff Happens – Single-Player Ranking Game",
+      "description": "Developed a full-stack single-player web game inspired by 'Stuff Happens' as part of a university project. Implemented with React 19 (SPA), Vite, Tailwind CSS, and dnd-kit for the frontend, Node.js 22 with Express and Passport.js for the backend, and SQLite for persistent storage. Features secure authentication, demo mode for guests, game history tracking, and drag‑and‑drop card placement. Optimized for performance, code clarity, and best development practices.",
+      "liveLink": "",
+      "sourceCodeLink": "https://github.com/Masniper/stuff-happens",
+      "image": "https://raw.githubusercontent.com/Masniper/stuff-happens/main/client/src/assets/images/screen-shots/play-game-submit.png"
+    },
     {
       "title": "InsideBox - Cross-platform QR Code Manager",
       "description": "Developed a cross-platform mobile application using Expo and React Native to manage QR codes, photos, and notes. Features include offline support, dark mode, data backup/restore, localization, and label printing.",
@@ -37,7 +51,7 @@
       "liveLink": "",
       "sourceCodeLink": "",
       "image": "assets/Gonbad-Kabud.png"
-    }, 
+    },
     {
       "title": "Rekasb Website and Plugin Development",
       "description": "Developed a professional website and WordPress plugin for seamless integration with React applications. The project aimed to streamline the user experience and enhance accessibility.",
@@ -51,21 +65,21 @@
       "liveLink": "https://masniper.github.io/freelancer-web-bot/",
       "sourceCodeLink": "https://github.com/Masniper/freelancer-web-bot",
       "image": "https://raw.githubusercontent.com/Masniper/freelancer-web-bot/refs/heads/main/Freelancer-web-bot.png"
-    },   
+    },
     {
       "title": "Charsoq - Maris Application Development",
       "description": "Contributed to the development and maintenance of the Maris application for Charsoq, a data-driven marketing agency specializing in the pharmaceutical industry. Responsibilities included fixing critical bugs, optimizing background geolocation tracking, enhancing UI/UX, upgrading libraries, and implementing requested features using React Native and Next.js.",
       "liveLink": "https://www.charsoq.com/en",
       "sourceCodeLink": "",
       "image": "assets/Maris.png"
-    },    
+    },
     {
       "title": "KTT Company Website",
       "description": "Developed a responsive and modern website for Tolou Taban Company (KTT), established in 2008. The site highlights the company’s expertise in infrastructure projects, industrial kitchen consulting, and human resource solutions. Focused on delivering a user-friendly experience to showcase their diverse services, including construction, waste management, and restaurant operations.",
       "liveLink": "https://ktt-company.com/",
       "sourceCodeLink": "",
       "image": "assets/ktt-company.png"
-    },    
+    },
     {
       "title": "Pezeshket - Telehealth & Medical Consultation Platform",
       "description": "Played a key role in developing and optimizing Pezeshket, the largest online health consultation platform for Persian speakers. Built the Progressive Web App (PWA) using React for a seamless web experience and developed the mobile application using React Native for cross-platform accessibility. Focused on enhancing UI/UX, improving performance, and ensuring smooth real-time interactions for users and healthcare professionals.",
