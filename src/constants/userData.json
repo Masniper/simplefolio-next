@@ -18,6 +18,20 @@
   },
   "projects": [
     {
+      "title": "Marzia Portfolio – UX/UI Designer Portfolio",
+      "description": "Developed a multilingual portfolio for a UX/UI designer using Next.js 15, TypeScript, and Tailwind CSS. Features smooth page transitions via Framer Motion, internationalization with EN / ES / IT using next-intl, responsive design, and project case studies. Integrated Swiper.js for carousels and Calendly for direct scheduling, ensuring a visually polished and user-focused experience.",
+      "liveLink": "https://marziaamendolia.com/en",
+      "sourceCodeLink": "",
+      "image": "assets/Marzia-Portfolio.png"
+    },
+    {
+      "title": "QTFix – Instantly Fix Wrong Keyboard Text",
+      "description": "Developed a modern Chrome extension to instantly fix Persian ↔ English text typed with the wrong keyboard, usable anywhere you type. Allows customizable keyboard shortcuts, supports RTL/LTR mixed texts, converts both ways (English ↔ Persian) instantly, and works fully offline for privacy. Built with Vite, React, and TypeScript for the popup UI, and plain JavaScript for background and content scripts. Fully open‑source and MIT licensed.",
+      "liveLink": "",
+      "sourceCodeLink": "https://github.com/Masniper/qtfix-chrome-extension",
+      "image": "assets/QTFix.png"
+    },
+    {
       "title": "Fractalwise – AI & Data Analytics Landing Page",
       "description": "Designed and developed a responsive landing page for Fractalwise, an AI and data analytics company specializing in educational institutions. The page highlights services such as advanced data analytics, interactive dashboards, data governance, and behavioral data analysis. Built with modern web technologies for optimal performance, accessibility, and SEO, ensuring a clean user experience to attract and engage target audiences.",
       "liveLink": "https://fractalwise.ir/",
