@@ -32,6 +32,13 @@
       "image": "assets/QTFix.png"
     },
     {
+      "title": "GitHub Contribution Graph Generator",
+      "description": "Built a web application to create custom GitHub‑style contribution graphs and generate a bash script that fakes commits. Features interactive grid editing, smart date handling with date‑fns, and script generation with custom author name/email. Developed with React 19, TypeScript, Vite, and Tailwind CSS, and deployed on GitHub Pages for instant access.",
+      "liveLink": "https://masniper.github.io/github-contrib-ui/",
+      "sourceCodeLink": "https://github.com/Masniper/github-contrib-ui",
+      "image": "assets/GitHub-Contrib-UI.png"
+    },
+    {
       "title": "Fractalwise – AI & Data Analytics Landing Page",
       "description": "Designed and developed a responsive landing page for Fractalwise, an AI and data analytics company specializing in educational institutions. The page highlights services such as advanced data analytics, interactive dashboards, data governance, and behavioral data analysis. Built with modern web technologies for optimal performance, accessibility, and SEO, ensuring a clean user experience to attract and engage target audiences.",
       "liveLink": "https://fractalwise.ir/",
