@@ -18,6 +18,13 @@
   },
   "projects": [
     {
+      "title": "BlueID – Digital Identity & Verification Platform",
+      "description": "Led the front-end development and deployment pipeline for BlueID, a digital identity and verification platform enabling businesses to securely authenticate users and perform real‑time validations. Built with React, Vite, and TypeScript, featuring responsive UI for identity verification, academic validation, and cloud digital signature workflows. Set up full CI/CD pipelines using GitHub Actions and configured production servers to ensure fast and reliable releases.",
+      "liveLink": "https://blue-id.net/",
+      "sourceCodeLink": "",
+      "image": "assets/BlueID.png"
+    },
+    {
       "title": "Marzia Portfolio – UX/UI Designer Portfolio",
       "description": "Developed a multilingual portfolio for a UX/UI designer using Next.js 15, TypeScript, and Tailwind CSS. Features smooth page transitions via Framer Motion, internationalization with EN / ES / IT using next-intl, responsive design, and project case studies. Integrated Swiper.js for carousels and Calendly for direct scheduling, ensuring a visually polished and user-focused experience.",
       "liveLink": "https://marziaamendolia.com/en",
